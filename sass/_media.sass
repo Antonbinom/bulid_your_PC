@@ -1,0 +1,109 @@
+@media (max-width: 1400px)
+	.header
+		background-position: center right
+		&__nav
+			& a
+				margin-right: 5rem
+			&--hidden
+				padding: 2rem 0
+				& a
+					margin-right: 0rem
+					margin-bottom: 1rem
+@media (max-width: 1200px)
+	.header
+		background-position: right -10rem top 0
+		&__display
+			&-title
+				width: 60rem
+				font-size: 5rem
+@media (max-width: 990px)
+	.header
+		background: none
+		position: relative
+		&__top
+			position: fixed
+			top: 0
+			width: 100%
+			padding-right: 4rem
+			margin-bottom: 0
+			z-index: 10
+		&__nav, &-btn
+			display: none
+			&--hidden
+				display: block
+		&-image
+			display: block
+			width: 100%
+			height: 60rem
+			margin-bottom: 5rem
+			background-image: url('/img/main-screen__bgc.jpg')
+			background-position: center right 0
+			background-repeat: no-repeat
+			background-size: cover
+	.burger
+		&-button
+			display: flex
+@media (max-width: 768px)
+	.header
+		padding-bottom: 8rem
+		background-image: none
+		&-image
+			display: block
+			width: 100%
+			height: 40rem
+			margin-bottom: 5rem
+			background-image: url('/img/main-screen__bgc.jpg')
+			background-position: center right 0
+			background-repeat: no-repeat
+			background-size: cover
+		&__display
+			&-title
+				width: 50rem
+				font-size: 38px
+			&-timer
+				margin-bottom: 6rem
+	.timer
+		justify-content: start
+		&-item
+			width: 9rem
+			padding: 1rem 1rem
+			margin-right: 1.5rem
+			min-width: auto
+			&:last-child
+				margin-right: 0
+		&-number
+			font-size: 3.2rem
+		&-text
+			font-size: 1.4rem
+
+@media (max-width: 576px)
+	.header
+		&-image
+			height: 35rem
+		&__display
+			&-title
+				width: 100%
+				margin-bottom: 3rem
+				text-align: center
+				font-size: 3.2rem
+	.timer
+		justify-content: center
+		margin-bottom: 4rem
+		&-item
+			width: 9rem
+			padding: 1rem 0.6rem
+			margin-right: 1rem
+			min-width: auto
+		&:last-child
+			margin-right: 0
+		&-number
+			font-size: 2.4rem
+	.button
+		width: 100%
+@media (max-width: 360px)
+	.header
+		&-image
+			height: 30rem
+		&__display
+			&-title
+				font-size: 3.6rem
