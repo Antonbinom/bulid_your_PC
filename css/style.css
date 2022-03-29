@@ -34,6 +34,12 @@ h1, h2, h3, h5, h6 {
   padding: 0;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+
 .container {
   max-width: 130rem;
   margin: 0 auto;
@@ -391,7 +397,6 @@ template {
 .header__top {
   padding: 4rem 8rem 4rem 3rem;
   font-size: 1.6rem;
-  background: #000;
 }
 
 .header__top-wrapper {
@@ -451,11 +456,12 @@ template {
 }
 
 .header__display {
+  margin-top: 15rem;
   margin-left: auto;
 }
 
 .header__display-title {
-  width: 92rem;
+  width: 68rem;
   margin-bottom: 5rem;
   font-weight: 700;
   font-size: 6.4rem;
@@ -530,6 +536,36 @@ template {
   top: 120px;
 }
 
+.about {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-image {
+  width: 52.6rem;
+  height: 54.2rem;
+  margin-right: 13.9rem;
+}
+
+.about-image img {
+  object-fit: cover;
+}
+
+.about__description {
+  width: 63.6rem;
+  margin-top: 6.9rem;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+
 @media (max-width: 1400px) {
   .header {
     background-position: center right;
@@ -554,12 +590,18 @@ template {
     width: 60rem;
     font-size: 5rem;
   }
+  .about-image {
+    width: 42rem;
+    height: auto;
+    margin-right: 3rem;
+  }
 }
 
 @media (max-width: 990px) {
   .header {
-    background: none;
     position: relative;
+    padding-bottom: 8rem;
+    background: none;
   }
   .header__top {
     position: fixed;
@@ -568,6 +610,7 @@ template {
     padding-right: 4rem;
     margin-bottom: 0;
     z-index: 10;
+    background: #000;
   }
   .header__nav, .header-btn {
     display: none;
@@ -585,14 +628,34 @@ template {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .header__display {
+    margin-top: 0;
+  }
   .burger-button {
     display: flex;
+  }
+  .about {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .about__wrapper {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about__description {
+    width: auto;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 4.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .header {
-    padding-bottom: 8rem;
     background-image: none;
   }
   .header-image {
@@ -607,7 +670,7 @@ template {
   }
   .header__display-title {
     width: 50rem;
-    font-size: 38px;
+    font-size: 3.8rem;
   }
   .header__display-timer {
     margin-bottom: 6rem;
@@ -630,21 +693,27 @@ template {
   .timer-text {
     font-size: 1.4rem;
   }
+  h2 {
+    font-size: 3.2rem;
+  }
 }
 
 @media (max-width: 576px) {
+  .header {
+    padding-bottom: 5rem;
+  }
   .header-image {
     height: 35rem;
   }
   .header__display-title {
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-align: center;
     font-size: 3.2rem;
   }
   .timer {
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
   .timer-item {
     width: 9rem;
@@ -661,6 +730,15 @@ template {
   .button {
     width: 100%;
   }
+  .about {
+    padding-top: 5rem;
+  }
+  .about-image {
+    width: 90%;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
 }
 
 @media (max-width: 360px) {
@@ -668,6 +746,9 @@ template {
     height: 30rem;
   }
   .header__display-title {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
   }
 }

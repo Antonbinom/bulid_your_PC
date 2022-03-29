@@ -16,10 +16,16 @@
 			&-title
 				width: 60rem
 				font-size: 5rem
+	.about
+		&-image
+			width: 42rem
+			height: auto
+			margin-right: 3rem
 @media (max-width: 990px)
 	.header
-		background: none
 		position: relative
+		padding-bottom: 8rem
+		background: none
 		&__top
 			position: fixed
 			top: 0
@@ -27,6 +33,7 @@
 			padding-right: 4rem
 			margin-bottom: 0
 			z-index: 10
+			background: #000
 		&__nav, &-btn
 			display: none
 			&--hidden
@@ -40,12 +47,26 @@
 			background-position: center right 0
 			background-repeat: no-repeat
 			background-size: cover
+		&__display
+			margin-top: 0
 	.burger
 		&-button
 			display: flex
+	.about
+		padding-top: 7rem
+		padding-bottom: 7rem
+		&__wrapper
+			flex-direction: column
+		&-image
+			width: 90%
+			margin: 0 auto
+		&__description
+			width: auto
+			margin-top: 0
+	h2
+		font-size: 4.2rem
 @media (max-width: 768px)
 	.header
-		padding-bottom: 8rem
 		background-image: none
 		&-image
 			display: block
@@ -59,7 +80,7 @@
 		&__display
 			&-title
 				width: 50rem
-				font-size: 38px
+				font-size: 3.8rem
 			&-timer
 				margin-bottom: 6rem
 	.timer
@@ -75,20 +96,22 @@
 			font-size: 3.2rem
 		&-text
 			font-size: 1.4rem
-
+	h2
+		font-size: 3.2rem
 @media (max-width: 576px)
 	.header
+		padding-bottom: 5rem
 		&-image
 			height: 35rem
 		&__display
 			&-title
 				width: 100%
-				margin-bottom: 3rem
+				margin-bottom: 5rem
 				text-align: center
 				font-size: 3.2rem
 	.timer
 		justify-content: center
-		margin-bottom: 4rem
+		margin-bottom: 5rem
 		&-item
 			width: 9rem
 			padding: 1rem 0.6rem
@@ -100,10 +123,18 @@
 			font-size: 2.4rem
 	.button
 		width: 100%
+	.about
+		padding-top: 5rem
+		&-image
+			width: 90%
+	h2
+		font-size: 2.8rem
 @media (max-width: 360px)
 	.header
 		&-image
 			height: 30rem
 		&__display
 			&-title
-				font-size: 3.6rem
+				font-size: 2.8rem
+	h2
+		font-size: 2.4rem
