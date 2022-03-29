@@ -632,6 +632,60 @@ template {
   opacity: 0.5;
 }
 
+.team {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.team__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11.3rem;
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team__items-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33%;
+  align-items: center;
+}
+
+.team__items-image {
+  width: 19rem;
+  height: 19rem;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-name {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 140%;
+}
+
+.team-role {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.team-bio {
+  padding: 1rem 3rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
 @media (max-width: 1400px) {
   .header {
     background-position: center right;
@@ -787,6 +841,19 @@ template {
   .process__steps-item h3 {
     font-size: 2.8rem;
   }
+  .team {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .team__top {
+    margin-bottom: 7rem;
+  }
+  .team__items {
+    flex-direction: column;
+  }
+  .team__items-item {
+    margin-bottom: 5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -836,7 +903,7 @@ template {
   .process__head-top {
     margin-bottom: 4rem;
   }
-  .process__head-top img {
+  .process-image {
     width: 6rem;
     height: 6rem;
     margin-right: 1rem;
