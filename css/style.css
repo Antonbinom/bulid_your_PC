@@ -55,6 +55,20 @@ h2 {
 .button {
   font-weight: 700;
   background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}.button to {
+  color: #ffffff;
+  background: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
 }
 
 /* Document
@@ -415,7 +429,14 @@ template {
 
 .header-image {
   display: none;
+  width: 100%;
+  height: 60rem;
+  margin-bottom: 5rem;
   margin-top: 12rem;
+  background-image: url("/img/main-screen__bgc.jpg");
+  background-position: center right 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-logo {
@@ -539,6 +560,10 @@ template {
 .visible {
   display: block;
   top: 120px;
+}
+
+.shift {
+  margin-right: 1.4rem;
 }
 
 .about {
@@ -752,7 +777,7 @@ template {
   height: 100vh;
   background: #000000;
   opacity: 0.5;
-  z-index: 200;
+  z-index: 2000;
 }
 
 .modal__popup {
@@ -764,7 +789,7 @@ template {
   padding: 9rem 9.4rem;
   background: #2C2C2C;
   transform: translate(-50%, -50%);
-  z-index: 300;
+  z-index: 3000;
   transition: all ease 0.4s;
 }
 
@@ -838,6 +863,14 @@ template {
   left: 50%;
 }
 
+.success {
+  box-shadow: 0 0px 15px #16cc6b;
+}
+
+.denied {
+  box-shadow: 0 0px 15px #c7055f;
+}
+
 @media (max-width: 1400px) {
   .header {
     background-position: center right;
@@ -856,7 +889,7 @@ template {
 
 @media (max-width: 1200px) {
   .header {
-    background-position: right -10rem top 0;
+    background-position: right -7rem top 0;
   }
   .header__display-title {
     width: 60rem;
@@ -902,13 +935,6 @@ template {
   }
   .header-image {
     display: block;
-    width: 100%;
-    height: 60rem;
-    margin-bottom: 5rem;
-    background-image: url("/img/main-screen__bgc.jpg");
-    background-position: center right 0;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .header__display {
     margin-top: 0;

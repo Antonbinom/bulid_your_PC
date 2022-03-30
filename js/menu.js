@@ -8,15 +8,15 @@ const menu = () => {
 			menuBurger.classList.toggle('visible')
 			document.body.classList.toggle('disabled')
 		}
-		if (document.body.classList.contains('disabled')) btnBurger.style.marginRight = 14 + "px"
-		else btnBurger.style.marginRight = 0
+		if (document.body.classList.contains('disabled')) btnBurger.classList.add('shift')
+		else btnBurger.classList.remove('shift')
 	})
 
 	window.addEventListener('resize', () => {
 		if (innerWidth > 991 && menuBurger.classList.contains('visible')) {
 			menuBurger.classList.remove('visible')
 			document.body.classList.remove('disabled')
-			btnBurger.style.marginRight = 0
+			btnBurger.classList.add('shift')
 		}
 	})
 }

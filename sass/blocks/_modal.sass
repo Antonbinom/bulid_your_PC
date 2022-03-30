@@ -10,7 +10,7 @@
 		height: 100vh
 		background: #000000
 		opacity: 0.5
-		z-index: 200
+		z-index: 2000
 	&__popup
 		// display: none
 		position: fixed
@@ -21,7 +21,7 @@
 		padding: 9rem 9.4rem
 		background: #2C2C2C
 		transform: translate(-50%,-50%)
-		z-index: 300
+		z-index: 3000
 		transition: all ease 0.4s
 	&__content
 		display: flex
@@ -73,3 +73,7 @@
 .opened
 	display: block
 	left: 50%
+.success
+	box-shadow: 0 0px 15px #16cc6b
+.denied
+	box-shadow: 0 0px 15px #c7055f

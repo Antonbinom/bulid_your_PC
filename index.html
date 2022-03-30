@@ -14,6 +14,7 @@
 	<script src="/js/timer.js" defer></script>
 	<script src="/js/scroll.js" defer></script>
 	<script src="/js/modal.js" defer></script>
+	<script src="/js/validation.js" defer></script>
 	<title>Document</title>
 </head>
 
@@ -46,8 +47,8 @@
 			</nav>
 			<button class="button header-btn header-btn--hidden request-btn" type="button">Оставить заявку</button>
 		</div>
+		<div class="header-image"></div>
 		<div class="container">
-			<div class="header-image"></div>
 			<div class="header__display">
 				<h1 class="header__display-title">Собираем игровой ПК
 					под ваш бюджет</h1>
@@ -190,7 +191,7 @@
 				<span class="modal-text">Мы свяжемся с вами, чтобы обсудить детали заказа</span>
 				<form action="" class="modal__form">
 					<input class="modal__form-input" name="name" type="text" placeholder="Как вас зовут">
-					<input class="modal__form-input" name="phone" type="number" placeholder="Номер телефона">
+					<input class="modal__form-input" name="phone" type="text" placeholder="Номер телефона">
 					<input class="modal__form-input" name="email" type="email" placeholder="Email">
 				</form>
 				<button class="button modal-btn">Отправить</button>
