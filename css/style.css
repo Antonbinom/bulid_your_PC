@@ -49,6 +49,7 @@ h2 {
 
 .disabled {
   overflow-y: hidden;
+  margin-right: 1.4rem;
 }
 
 /* Document
@@ -431,7 +432,7 @@ template {
 }
 
 .header__nav--hidden a {
-  display: block;
+  display: inline-block;
   font-size: 2.4rem;
 }
 
@@ -451,7 +452,7 @@ template {
   top: -34%;
   left: 50%;
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 3rem 3rem;
   transform: translate(-50%, 0);
   background: #000;
   transition: ease-out all 0.5s;
@@ -792,6 +793,15 @@ template {
   }
   .header__nav--hidden, .header-btn--hidden {
     display: block;
+  }
+  .header__nav--hidden a, .header-btn--hidden a {
+    display: block;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__nav--hidden a:last-child, .header-btn--hidden a:last-child {
+    margin-right: auto;
   }
   .header-image {
     display: block;

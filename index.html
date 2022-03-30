@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="/js/menu.js" defer></script>
 	<script src="/js/timer.js" defer></script>
+	<script src="/js/scroll.js" defer></script>
 	<title>Document</title>
 </head>
 
@@ -23,9 +24,9 @@
 				</a>
 				<div class="header__menu">
 					<nav class="header__nav">
-						<a href="#">Чем занимаемся</a>
-						<a href="#">Процесс работы</a>
-						<a href="#">Команда</a>
+						<a href="#about">Чем занимаемся</a>
+						<a href="#process">Процесс работы</a>
+						<a href="#team">Команда</a>
 					</nav>
 				</div>
 				<button class="button header-btn" type="button">Оставить заявку</button>
@@ -38,9 +39,9 @@
 		</div>
 		<div class="header-burger__menu">
 			<nav class="header__nav header__nav--hidden">
-				<a href="#">Чем занимаемся</a>
-				<a href="#">Процесс работы</a>
-				<a href="#">Команда</a>
+				<a href="#about">Чем занимаемся</a>
+				<a href="#process">Процесс работы</a>
+				<a href="#team">Команда</a>
 			</nav>
 			<button class="button header-btn header-btn--hidden" type="button">Оставить заявку</button>
 		</div>
@@ -68,14 +69,11 @@
 					</div>
 				</div>
 				<button class="button header__display-button">Оставить заявку</button>
-				<!-- <div class="main__display-background">
-					<img src="img/main-screen__bgc.jpg" alt="">
-				</div> -->
 			</div>
 		</div>
 	</header>
 	<main>
-		<section class="about">
+		<section id="about" class="about">
 			<div class="container">
 				<div class="about__wrapper">
 					<div class="about-image"><img src="/img/about__img.png" alt="Изображение: Компьютер">
@@ -92,7 +90,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="process">
+		<section id="process" class="process">
 			<div class="container">
 				<div class="process__head">
 					<div class="process__head-top">
@@ -129,7 +127,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="team">
+		<section id="team" class="team">
 			<div class="container">
 				<div class="team__top">
 					<img src="/img/icon-heading.png" alt="" class="team-image process-image">
@@ -182,6 +180,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
 </body>
 
 </html>
