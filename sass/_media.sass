@@ -79,7 +79,6 @@
 			&-item
 				&h3
 					font-size: 2.8rem
-
 @media (max-width: 768px)
 	.header
 		background-image: none
@@ -138,6 +137,15 @@
 				margin-bottom: 5rem
 	.footer
 		padding-top: 5rem
+	.modal
+		&__popup
+			width: 90%
+			height: auto
+			padding: 7rem
+		&__form
+			width: 100%
+		& h2
+			font-size: 3.2rem
 @media (max-width: 576px)
 	.header
 		padding-bottom: 5rem
@@ -198,6 +206,23 @@
 			&-link
 				width: 4rem
 				height: 4rem
+	.modal
+		&__popup
+			padding: 7rem 5rem
+		&-btn
+			width: 100%
+		& h2
+			font-size: 2.8rem
+		&-text
+			font-size: 1.4rem
+@media (max-width: 460px)
+	.modal
+		&__popup
+			padding: 5rem 3rem
+		&-close
+			width: 3rem
+			height: 3rem
+			font-size: 2rem
 @media (max-width: 360px)
 	.header
 		&-image

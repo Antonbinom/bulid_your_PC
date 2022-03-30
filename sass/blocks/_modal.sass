@@ -1,0 +1,75 @@
+.modal
+	&-overlay
+		display: none
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100vh
+		background: #000000
+		opacity: 0.5
+		z-index: 200
+	&__popup
+		// display: none
+		position: fixed
+		top: 50%
+		left: -50%
+		width: 66.3rem
+		height: 55.1rem
+		padding: 9rem 9.4rem
+		background: #2C2C2C
+		transform: translate(-50%,-50%)
+		z-index: 300
+		transition: all ease 0.4s
+	&__content
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+	&-title
+		margin-bottom: 1rem
+	&-text
+		margin-bottom: 2.8rem
+		font-size: 1.6rem
+		line-height: 160%
+		opacity: 0.5
+	&__form
+		display: flex
+		flex-direction: column
+		width: 45.4rem
+		&-input
+			margin-bottom: 1.6rem
+			padding: 1.1rem 3rem
+			background: #606060
+			border-radius: 50px
+			font-size: 1.4rem
+			line-height: 160%
+			color: #FFFFFF
+			&::placeholder
+				color: white
+				opacity: 0.8
+			&:last-child
+				margin-bottom: 0
+	&-btn
+		margin-top: 3.2rem
+	&-close
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		top: 2rem
+		right: 2rem
+		width: 4rem
+		height: 4rem
+		font-size: 3rem
+		border-radius: 50%
+		background: #606060
+		outline: none
+		border: none
+		cursor: pointer
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+.opened
+	display: block
+	left: 50%
