@@ -1,5 +1,4 @@
 const modal = () => {
-	const requestBtn = document.querySelectorAll('.request-btn')
 	const modalOverlay = document.querySelector('.modal-overlay')
 	const modalPopup = document.querySelector('.modal__popup')
 	const btnBurger = document.querySelector('.burger-button')
@@ -9,6 +8,7 @@ const modal = () => {
 		modalInputs.forEach(input => {
 			input.value = ''
 			input.classList.remove('success', 'denied')
+			input.style.boxShadow = ''
 		})
 	}
 

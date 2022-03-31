@@ -1,6 +1,5 @@
 'use strict'
 const scroll = () => {
-
 	const headerBlock = document.querySelector('.header')
 	const headerMenu = document.querySelector('.header__top')
 	const burgerMenu = document.querySelector('.header-burger__menu')
@@ -40,8 +39,8 @@ const scroll = () => {
 	}
 
 	const showMenu = () => {
-		if (window.pageYOffset > 300 && !burgerMenu.classList.contains('visible'))
-			setTimeout(headerMenu.classList.add('invisible'), 1000)
+		if (window.pageYOffset > 300)
+			headerMenu.classList.remove('invisible')
 	}
 
 	links.forEach(link => {
@@ -64,13 +63,13 @@ const scroll = () => {
 	}
 
 	window.addEventListener('scroll', () => {
-		hideMenu()
 		showButton()
+		showMenu()
+		setTimeout(hideMenu, 2000)
 	})
 
-	document.addEventListener('mousemove', (e) => {
-		if (e.clientY <= 120) headerMenu.classList.remove('invisible')
-	})
-	headerMenu.addEventListener('mouseleave', showMenu)
+	// document.addEventListener('mousemove', (e) => {
+	// 	if (e.clientY <= 120) headerMenu.classList.remove('invisible')
+	// })
 }
 scroll()
