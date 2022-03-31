@@ -25,17 +25,15 @@ const sendForm = () => {
 	}
 
 	const messageWrong = () => {
-		modalMessage.style.display = 'block'
+
 		modalMessage.style.color = '#c7055f'
 		modalMessage.textContent = 'Ошибка при отправке данных!'
 	}
 	const messageSuccess = () => {
-		modalMessage.style.display = 'block'
 		modalMessage.style.color = '#16cc6b'
 		modalMessage.textContent = 'Данные отправлены!'
 	}
 	const messageProcess = () => {
-		modalMessage.style.display = 'block'
 		modalMessage.style.color = '#e6df08'
 		modalMessage.textContent = 'Отправка данных...'
 	}

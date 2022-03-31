@@ -824,7 +824,7 @@ template {
 }
 
 .modal__form-input:last-child {
-  margin-bottom: 0;
+  background: red;
 }
 
 .modal-btn {
@@ -832,13 +832,15 @@ template {
 }
 
 .modal-message {
+  display: block;
   position: absolute;
   bottom: 3rem;
   left: 50%;
-  transform: translate(-50%, 0);
-  display: none;
+  width: 100%;
   margin-top: 1rem;
+  text-align: center;
   font-size: 2.4rem;
+  transform: translate(-50%, 0);
 }
 
 .modal-close {
@@ -1196,6 +1198,9 @@ body {
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
+  }
+  .modal-message {
+    bottom: 1rem;
   }
 }
 
