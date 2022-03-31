@@ -1007,13 +1007,7 @@ body {
   }
   .header-image {
     display: block;
-    width: 100%;
     height: 40rem;
-    margin-bottom: 5rem;
-    background-image: url("/img/main-screen__bgc.jpg");
-    background-position: center right 0;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .header__display-title {
     width: 50rem;
