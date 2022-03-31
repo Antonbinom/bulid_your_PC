@@ -396,7 +396,7 @@ template {
 .header {
   padding-bottom: 22.8rem;
   margin-bottom: 10rem;
-  background-image: url("/img/main-screen__bgc.jpg");
+  background-image: url("./img/main-screen__bgc.jpg");
   background-position: center right 0;
   background-repeat: no-repeat;
   background-size: cover;
