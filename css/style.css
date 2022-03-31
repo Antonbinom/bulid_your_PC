@@ -55,20 +55,6 @@ h2 {
 .button {
   font-weight: 700;
   background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-}.button to {
-  color: #ffffff;
-  background: transparent;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus input:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: 0;
 }
 
 /* Document
@@ -419,6 +405,8 @@ template {
 .header__top {
   padding: 4rem 8rem 4rem 3rem;
   font-size: 1.6rem;
+  opacity: 1;
+  transition: ease all 0.5s;
 }
 
 .header__top-wrapper {
@@ -475,7 +463,7 @@ template {
 .header-burger__menu {
   position: fixed;
   flex-direction: column;
-  top: -34%;
+  top: -40%;
   left: 50%;
   width: 100%;
   padding: 3rem 3rem;
@@ -564,6 +552,10 @@ template {
 
 .shift {
   margin-right: 1.4rem;
+}
+
+.invisible {
+  opacity: 0;
 }
 
 .about {
@@ -741,7 +733,6 @@ template {
 }
 
 .footer-btn {
-  width: 18.8rem;
   margin-bottom: 4.1rem;
 }
 
@@ -871,6 +862,34 @@ template {
   box-shadow: 0 0px 15px #c7055f;
 }
 
+body {
+  position: relative;
+}
+
+.to-top {
+  display: block;
+  text-align: center;
+  position: fixed;
+  bottom: 10rem;
+  right: 10rem;
+  width: 6rem;
+  height: 6rem;
+  padding-top: .5rem;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #7C6AFA;
+  border-radius: 1rem;
+  border: 0.2rem solid #7C6AFA;
+  background-color: #000000;
+  cursor: pointer;
+  transition: ease all 0.5s;
+  opacity: 0;
+}
+
+.to-top--visible {
+  opacity: 1;
+}
+
 @media (max-width: 1400px) {
   .header {
     background-position: center right;
@@ -899,6 +918,9 @@ template {
     width: 42rem;
     height: auto;
     margin-right: 3rem;
+  }
+  .to-top {
+    right: 5rem;
   }
 }
 
@@ -966,7 +988,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     background-image: none;
   }
