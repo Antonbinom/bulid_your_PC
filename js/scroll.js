@@ -8,8 +8,9 @@ const scroll = () => {
 
 	const smoothScroll = (e, link) => {
 		e.preventDefault()
-		const id = link.getAttribute('href').substring(1)
-		const section = document.getElementById(id)
+		// const id = link.getAttribute('href').substring(1)
+		// const section = document.getElementById(id)
+		const section = document.querySelector(link.getAttribute('href'))
 
 		if (section) {
 			seamless.scrollIntoView(section, {
@@ -67,9 +68,5 @@ const scroll = () => {
 		showMenu()
 		setTimeout(hideMenu, 2000)
 	})
-
-	// document.addEventListener('mousemove', (e) => {
-	// 	if (e.clientY <= 120) headerMenu.classList.remove('invisible')
-	// })
 }
 scroll()
