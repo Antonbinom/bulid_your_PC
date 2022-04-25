@@ -32,7 +32,7 @@ const scroll = () => {
 	}
 
 	const hideMenu = () => {
-		if (window.pageYOffset > 300) {
+		if (window.pageYOffset > 300 && !burgerMenu.classList.contains('visible')) {
 			headerMenu.classList.add('invisible')
 		} else {
 			headerMenu.classList.remove('invisible')
