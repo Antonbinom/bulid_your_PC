@@ -18,5 +18,5 @@ Pet-проект. Промо-страница.
 - Sass
 - Инкапсуляция JS
 
-
+## <a href="https://antonbinom.github.io/bulid_your_PC/">Ссылка</a>
 
