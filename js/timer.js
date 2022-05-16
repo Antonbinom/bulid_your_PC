@@ -71,4 +71,4 @@ const timer = (deadline) => {
 	}, 1000)
 }
 
-timer('02 april 2022')
+timer('02 april 2023')
